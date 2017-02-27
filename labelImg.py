@@ -653,7 +653,7 @@ class MainWindow(QMainWindow, WindowMixin):
         try:
             unicodeFilePath = u(filePath)
             if self.usingPascalVocFormat is True:
-                lf.savePascalVocFormat(unicodeFilePath, shapes, unicodeFilePath, self.imageData,
+                lf.savePascalVocFormat(unicodeFilePath, shapes, self.filePath, self.imageData,
                                        self.lineColor.getRgb(), self.fillColor.getRgb())
             else:
                 lf.save(unicodeFilePath, shapes, unicodeFilePath, self.imageData,
